@@ -1,0 +1,25 @@
+{
+  "name": "debby",
+  "version": "1.0.0",
+  "description": "Debugging Interface for Chrome Remote Debugging Protocol 1.1",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/janstovr/debby.git"
+  },
+  "keywords": [
+    "chrome",
+    "remote",
+    "debug",
+    "interface"
+  ],
+  "author": "Jan Egil Staff Øvretveit <janstovr@qup.io>",
+  "license": "MIT",
+  "dependencies": {
+    "tape": "^4.4.0",
+    "ws": "^1.0.1"
+  }
+}
