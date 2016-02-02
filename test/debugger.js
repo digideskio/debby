@@ -66,7 +66,7 @@ test('test debugger notifications', assert => {
 
   });
 
-  var client = debby.connect({uri: 'ws://localhost:4000'});
+  var client = debby.connect('ws://localhost:4000');
   client.once('close', () => {
     server.close();
     assert.pass('close');

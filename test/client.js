@@ -4,23 +4,6 @@ const debby = require('..');
 const test = require('tape');
 const ws = require('ws');
 
-test('test client connect errors', assert => {
-  assert.plan(2);
-
-  var client = new debby.Client();
-  try{
-    client.connect();
-  } catch(error) {
-    assert.equals(error.toString(), 'Error: The options parameter is undefined. It has to be an object with uri as a property.');
-  }
-
-  try{
-    client.connect({foo: 'bar'});
-  } catch(error) {
-    assert.equals(error.toString(), 'Error: No URI was provided. The options parameter need the uri property.');
-  } 
-});
-
 test('test client commands', assert => {
   assert.plan(4);
 
@@ -42,7 +25,7 @@ test('test client commands', assert => {
 
   server.on('listening', () => {
 
-    var client = debby.connect({uri: 'ws://localhost:4000'});
+    var client = debby.connect('ws://localhost:4000');
     client.once('close', () => {
       server.close();
       assert.pass('close');
@@ -92,7 +75,7 @@ test('test client commands with params and result', assert => {
 
   server.on('listening', () => {
 
-    var client = debby.connect({uri: 'ws://localhost:4000'});
+    var client = debby.connect('ws://localhost:4000');
     client.once('close', () => {
       server.close();
       assert.pass('close');
