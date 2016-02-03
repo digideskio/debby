@@ -154,3 +154,37 @@ Emitted upon `Network.requestWillBeSent` notification.
 #### Event 'response', params
 
 Emitted upon `Network.responseReceived` notification.
+
+### Class: Dom
+
+#### Event 'modify', params
+
+Emitted upon `DOM.attributeModified` notification.
+
+#### Event 'detach', params
+
+Emitted upon `DOM.attributeRemoved` notification.
+
+#### Event 'change', params
+
+Emitted upon `DOM.characterDataModified` notification.
+
+#### Event 'count', params
+
+Emitted upon `DOM.childNodeCountUpdated` notification.
+
+#### Event 'insert', params
+
+Emitted upon `DOM.childNodeInserted` notification.
+
+#### Event 'remove', params
+
+Emitted upon `DOM.childNodeRemoved` notification.
+
+#### Event 'update'
+
+Emitted upon `DOM.documentUpdated` notification.
+
+#### Event 'assemble', params
+
+Emitted upon `DOM.setChildNodes` notification.
