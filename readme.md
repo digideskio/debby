@@ -100,3 +100,25 @@ Emitted upon `Debugger.scriptFailedToParse` notification.
 #### Event 'parse', params
 
 Emitted upon `Debugger.scriptParsed` notification.
+
+### Class: Page
+
+#### Event 'content', params
+
+Emitted upon `Page.domContentEventFired` notification.
+
+#### Event 'attach', params
+
+Emitted upon `Page.frameAttached` notification.
+
+#### Event 'detach', params
+
+Emitted upon `Page.frameDetached` notification.
+
+#### Event 'navigate', params
+
+Emitted upon `Page.frameNavigated` notification.
+
+#### Event 'load', params
+
+Emitted upon `Page.loadEventFired` notification.
