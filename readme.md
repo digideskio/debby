@@ -122,3 +122,9 @@ Emitted upon `Page.frameNavigated` notification.
 #### Event 'load', params
 
 Emitted upon `Page.loadEventFired` notification.
+
+### Class: Timeline
+
+#### Event 'record', params
+
+Emitted upon `Timeline.eventRecorded` notification.
