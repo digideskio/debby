@@ -128,3 +128,29 @@ Emitted upon `Page.loadEventFired` notification.
 #### Event 'record', params
 
 Emitted upon `Timeline.eventRecorded` notification.
+
+### Class: Network
+
+#### Event 'data', params
+
+Emitted upon `Network.dataReceived` notification.
+
+#### Event 'fail', params
+
+Emitted upon `Network.loadingFailed` notification.
+
+#### Event 'finish', params
+
+Emitted upon `Network.loadingFinished` notification.
+
+#### Event 'cache', params
+
+Emitted upon `Network.requestServedFromCache` notification.
+
+#### Event 'request', params
+
+Emitted upon `Network.requestWillBeSent` notification.
+
+#### Event 'response', params
+
+Emitted upon `Network.responseReceived` notification.
